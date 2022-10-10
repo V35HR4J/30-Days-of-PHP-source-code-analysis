@@ -15,7 +15,7 @@ The severity of attacks that have leveraged SQL Injection should not be understa
 
 Consider the following Symfony controller for the endpoint `/items?q=...:`
 
-```
+```php
 class ItemsController extends Controller
 {
     /**
