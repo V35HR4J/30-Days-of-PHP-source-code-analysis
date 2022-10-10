@@ -4,6 +4,6 @@ This repository contains all the knowledge which i have gained during my 30 Days
 
 | Day     | Topic      |
 | ------------- | ------------- | 
-| 1         | SQL injection         | 
+| 1         | [SQL injection](Day1)         | 
 
 Credits: [SecureFlag](https://secureflag.owasp.org/)
