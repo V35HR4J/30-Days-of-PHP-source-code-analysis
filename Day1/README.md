@@ -42,6 +42,8 @@ class ItemsController extends Controller
 }
 ```
 ### Example exploit: 
+injecting `/items?q=administrator'--` will tell the database to execute following query which result in login bypass for the user `administrator`
+
 `SELECT * FROM users WHERE username = 'administrator'--' AND password = '`
 
 ## Prevention
