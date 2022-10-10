@@ -41,10 +41,18 @@ class ItemsController extends Controller
     }
 }
 ```
-### Example exploit: 
-injecting `/items?q=administrator'--` will tell the database to execute following query which result in login bypass for the user `administrator`
+
+
+### Example exploit 1:
+Injecting `/items?q=1'+UNION+SELECT+password+from+users` will tell the database to execute following query whcich displays the value of `password` column from `users` table.
+
+`SELECT * FROM items WHERE name LIKE '%' UNION SELECT 1,2,password,4,5 FROM users --%'`
+
+### Example exploit 2: 
+injecting `administrator'--` on username while loging in will tell the database to execute following query which result in login bypass for the user `administrator`
 
 `SELECT * FROM users WHERE username = 'administrator'--' AND password = '`
+
 
 ## Prevention
 The solution is always to avoid string concatenation; common solutions are (in order of preference, where possible):
