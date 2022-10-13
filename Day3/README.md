@@ -1,4 +1,4 @@
-![Type Juggling](image/Traversal.png?raw=true "Type Juggling")
+![Type Juggling](image/juggling.png?raw=true "Type Juggling")
 
 # Description
 
