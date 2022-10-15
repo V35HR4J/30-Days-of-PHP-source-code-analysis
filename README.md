@@ -9,6 +9,6 @@ This repository contains all the knowledge which i have gained during my 30 Days
 | 3         | [Type Juggling](Day3)         | 
 | 4         | [XXE](Day4)                    |
 | 5         | [RFI](Day5)                    |
-| 5         | [RFI](Day6)                    |
+| 6         | [CSRF](Day6)                    |
 
 Credits: [SecureFlag](https://secureflag.owasp.org/)
