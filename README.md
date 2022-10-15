@@ -8,7 +8,7 @@ This repository contains all the knowledge which i have gained during my 30 Days
 | 2         | [Directory Traversal](Day2)         | 
 | 3         | [Type Juggling](Day3)         | 
 | 4         | [XXE](Day4)                    |
-| 4         | [RFI](Day5)                    |
-| 4         | [RFI](Day5)                    |
+| 5         | [RFI](Day5)                    |
+| 5         | [RFI](Day6)                    |
 
 Credits: [SecureFlag](https://secureflag.owasp.org/)
