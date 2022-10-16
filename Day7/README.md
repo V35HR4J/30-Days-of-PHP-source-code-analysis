@@ -49,6 +49,9 @@ function ajax_file_upload() {
 				$ret['error'] = __( 'You haven\'t ability to edit this user', 'ultimate-member' );
 				wp_send_json_error( $ret );
 			}
+			else {
+				fileupload()->upload( $id, $nonce );
+			}
 			.
 			.
 			.
