@@ -55,8 +55,7 @@ If you see here, the current logged in user is not verified and the file is uplo
 
 ```
 
-If you see here, the current logged in user is verified before executing the upload function. So, only the current logged in user can upload a file with their respective id.
-
+If you see here, the current logged in user is verified before executing the upload function. So, only the current logged in user can upload a file with their respective id. [Full Commit](https://github.com/ultimatemember/ultimatemember/commit/249682559012734a4f7d71f52609b2f301ea55b1)
 # Preventions
 
 - Access Control Checks
