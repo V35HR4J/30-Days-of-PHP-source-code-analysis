@@ -16,6 +16,7 @@ function ajax_file_upload() {
 			$nonce = $_POST['_wpnonce'];
 			$id = $_POST['key'];
 			$timestamp = $_POST['timestamp'];
+			$user_id = empty( $_POST['user_id'] ) ? get_current_user_id() : $_POST['user_id'];
 
 			UM()->fields()->set_id = $_POST['set_id'];
 			UM()->fields()->set_mode = $_POST['set_mode'];
@@ -31,32 +32,30 @@ If you see here, the current logged in user is not verified and the file is uplo
 # Fix
 
 ```php
-		function ajax_image_upload() {
+function ajax_file_upload() {
 			$ret['error'] = null;
 			$ret = array();
 
+			$nonce = $_POST['_wpnonce'];
 			$id = $_POST['key'];
 			$timestamp = $_POST['timestamp'];
-			$nonce = $_POST['_wpnonce'];
 			$user_id = empty( $_POST['user_id'] ) ? get_current_user_id() : $_POST['user_id'];
 
 			UM()->fields()->set_id = $_POST['set_id'];
 			UM()->fields()->set_mode = $_POST['set_mode'];
 
+			// Checks if the current user is the owner of the user_id
 			if ( ! UM()->roles()->um_current_user_can( 'edit', $user_id ) ) {
 				$ret['error'] = __( 'You haven\'t ability to edit this user', 'ultimate-member' );
 				wp_send_json_error( $ret );
 			}
-            else
-                .
-                .
-                .
-                fileupload()->upload( $id, $timestamp, $nonce );
-
+			.
+			.
+			.
+			fileupload()->upload( $id, $nonce );
 ```
 
-If you see here, the current logged in user is verified before executing the upload function. So, only the current logged in user can upload a file with their respective id.
-
+If you see here, the current logged in user is verified before executing the upload function. So, only the current logged in user can upload a file with their respective id. [Full Commit](https://github.com/ultimatemember/ultimatemember/commit/249682559012734a4f7d71f52609b2f301ea55b1)
 # Preventions
 
 - Access Control Checks
