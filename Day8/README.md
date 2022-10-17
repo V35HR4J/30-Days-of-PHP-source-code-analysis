@@ -18,7 +18,7 @@ Let's analyze following code which does nslookup of a given domain.
         }
         else
         {
-            echo "<p align=\"left\">" . shell_exec("nslookup  " . $target . "</p>";
+            echo "<p align=\"left\">" . shell_exec("nslookup  " . $target) . "</p>";
         }
     }
 ?>
