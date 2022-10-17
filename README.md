@@ -11,4 +11,5 @@ This repository contains all the knowledge which i have gained during my 30 Days
 | 5         | [RFI](Day5)                    |
 | 6         | [CSRF](Day6)                    |
 | 7         | [IDOR](Day7)                    |
+| 8         | [Command Injection](Day8)                    |
 Credits: [SecureFlag](https://secureflag.owasp.org/)
