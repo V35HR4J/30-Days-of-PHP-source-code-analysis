@@ -6,7 +6,7 @@ Insecure direct object references (IDOR) are a type of access control vulnerabil
 
 # Example
 Following is a small code snippet of Ultimate Member 2.1.2 which was vulnerable to IDOR. (CVE-2020-6859)
-Lets try to analyze the it:
+Lets try to analyze it:
 
 ```php
 function ajax_file_upload() {
