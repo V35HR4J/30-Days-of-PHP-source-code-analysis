@@ -101,4 +101,4 @@ The payload above decodes as `O:10:"FSResource":2:{s:4:"path";s:9:"shell.php";s:
 # Prevention
 Never use the `unserialize()` function on user-supplied input, and preferably use data-only serialization formats such as JSON. If you need to use PHP deserialization, a second optional parameter has been added in PHP 7 that enables you to specify an allow list of allowed classes.
 
-References: [Notsosecure](https://notsosecure.com/remote-code-execution-php-unserialize),[](https://knowledge-base.secureflag.com/vulnerabilities/unsafe_deserialization/unsafe_deserialization_php.html)
+References: [Notsosecure](https://notsosecure.com/remote-code-execution-php-unserialize),[OWASP](https://knowledge-base.secureflag.com/vulnerabilities/unsafe_deserialization/unsafe_deserialization_php.html)
