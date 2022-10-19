@@ -13,4 +13,5 @@ This repository contains all the knowledge which i have gained during my 30 Days
 | 7         | [IDOR](Day7)                    |
 | 8         | [Command Injection](Day8)                    |
 | 9         | [SSRF](Day9)                    |
+| 10        | [Unsafe Deserialization](Day10) |
 Credits: [SecureFlag](https://secureflag.owasp.org/)
