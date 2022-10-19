@@ -20,7 +20,7 @@ echo $serialized;
 ?>
 
 ```
-Returns;
+Returns:
 `a:2:{i:0;s:9:"Pentester";i:1;s:5:"Nepal";}`
 
 Understanding the serialized string;
@@ -34,7 +34,7 @@ Understanding the serialized string;
 |S:5:"Nepal"|	String , 5 chars long, string value "Nepal"
 
 
-# PHP UnSerialization
+## unserialize()
 Convert serialized data back into actual data.
 
 Example:
@@ -47,7 +47,7 @@ $test = unserialize($data);
 var_dump($test);
 ?>
 ```
-Returns;
+Returns:
 `array(2) { [0]=> string(9) "Pentester" [1]=> string(5) "Nepal" }`
 
 # Vulnerability
