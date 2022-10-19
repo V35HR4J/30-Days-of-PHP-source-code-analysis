@@ -99,4 +99,6 @@ If the class FSResource defined in the paragrah above is in scope, an attacker c
 The payload above decodes as `O:10:"FSResource":2:{s:4:"path";s:9:"shell.php";s:7:"content";s:27:"<?php system($_GET["cmd"]);";}` and, when deserialized, it creates the shell.php allowing the attacker to run arbitrary commands on the systems.
 
 # Prevention
-Never use the unserialize() function on user-supplied input, and preferably use data-only serialization formats such as JSON. If you need to use PHP deserialization, a second optional parameter has been added in PHP 7 that enables you to specify an allow list of allowed classes.
+Never use the `unserialize()` function on user-supplied input, and preferably use data-only serialization formats such as JSON. If you need to use PHP deserialization, a second optional parameter has been added in PHP 7 that enables you to specify an allow list of allowed classes.
+
+References: [Notsosecure](https://notsosecure.com/remote-code-execution-php-unserialize),[](https://knowledge-base.secureflag.com/vulnerabilities/unsafe_deserialization/unsafe_deserialization_php.html)
