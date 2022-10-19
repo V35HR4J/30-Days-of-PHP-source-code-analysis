@@ -4,14 +4,14 @@ This repository contains all the knowledge which i have gained during my 30 Days
 
 | Day     | Topic      |
 | ------------- | ------------- | 
-| 1         | [SQL injection](Day01)         | 
-| 2         | [Directory Traversal](Day02)         | 
-| 3         | [Type Juggling](Day03)         | 
-| 4         | [XXE](Day04)                    |
-| 5         | [RFI](Day05)                    |
-| 6         | [CSRF](Day06)                    |
-| 7         | [IDOR](Day07)                    |
-| 8         | [Command Injection](Day08)                    |
-| 9         | [SSRF](Day09)                    |
-| 10        | [Unsafe Deserialization](Day10) |
+| 1         | [SQL Injection](Day_01)
+| 2         | [Directory Traversal](Day_02)         | 
+| 3         | [Type Juggling](Day_03)         | 
+| 4         | [XXE](Day_04)                    |
+| 5         | [RFI](Day_05)                    |
+| 6         | [CSRF](Day_06)                    |
+| 7         | [IDOR](Day_07)                    |
+| 8         | [Command Injection](Day_08)                    |
+| 9         | [SSRF](Day_09)                    |
+| 10        | [Unsafe Deserialization](Day_10) |
 Credits: [SecureFlag](https://secureflag.owasp.org/)
