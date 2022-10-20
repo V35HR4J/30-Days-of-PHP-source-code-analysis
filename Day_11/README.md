@@ -49,7 +49,7 @@ When victim visits this url, as discussed above, the javascript code `<script>al
 
 
 ```
-Now, it is sanitized using the function `htmlentities()` before displaying it, which converts characters to HTML entities. View [full commit](https://github.com/MindscapeHQ/raygun4wordpress/pull/17/files)
+Now, the variable `previousUrl` is sanitized using the function `htmlentities()` before displaying it, which converts characters to HTML entities. View [full commit](https://github.com/MindscapeHQ/raygun4wordpress/pull/17/files).
 
 # Preventions:
 - Input Validation
