@@ -15,4 +15,5 @@ This repository contains all the knowledge which i have gained during my 30 Days
 | 9         | [SSRF](Day_09)                    |
 | 10        | [Unsafe Deserialization](Day_10) |
 | 11        | [Reflected XSS](Day_11)           |
+| 12        | [Stored XSS](Day_12)           |
 Credits: [SecureFlag](https://secureflag.owasp.org/)
